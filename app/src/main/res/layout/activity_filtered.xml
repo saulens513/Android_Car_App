@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FilteredActivity">
+
+    <TextView
+        android:id="@+id/batteryLevelText"
+        android:layout_width="100dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="10dp"
+        android:text="@string/batteryLevel"/>
+
+    <Spinner
+        android:id="@+id/filterBattery"
+        android:layout_toRightOf="@id/batteryLevelText"
+        android:layout_width="150dp"
+        android:layout_height="20dp">
+    </Spinner>
+
+    <TextView
+        android:id="@+id/plateText"
+        android:layout_width="100dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/batteryLevelText"
+        android:text="@string/plate"/>
+
+    <Spinner
+        android:id="@+id/plate"
+        android:layout_toRightOf="@id/plateText"
+        android:layout_below="@id/filterBattery"
+        android:layout_width="150dp"
+        android:layout_height="20dp">
+    </Spinner>
+
+    <ListView
+        android:id="@+id/filteredList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/plateText"
+        android:layout_above="@id/nav_view">
+    </ListView>
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="?android:attr/windowBackground"
+        app:menu="@menu/bottom_nav_menu" />
+
+</RelativeLayout>

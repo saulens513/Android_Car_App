@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">test</string>
+    <string name="title_activity_car_list">Automobiliu sarasas</string>
+    <string name="title_list">List</string>
+    <string name="title_map">Map</string>
+    <string name="title_filtered">Filter</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_filtered">Ieskoti</string>
+    <string name="batteryLevel">Baterijos likutis:</string>
+    <string name="plate">Numeris:</string>
+</resources>

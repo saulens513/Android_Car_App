@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/car_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:id="@+id/car_name"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/car_image"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center_vertical"
+        android:textSize="20dp"
+        android:textColor="@android:color/black"
+        android:text="labas"
+        />
+
+    <ImageView
+        android:id="@+id/ic_battery"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_toRightOf="@id/car_image"
+        android:layout_alignTop="@id/car_battery"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/ic_car_battery"
+        />
+
+    <TextView
+        android:id="@+id/car_battery"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:gravity="center_vertical"
+        android:layout_below="@id/car_name"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/ic_battery"
+        android:text="battery"
+        />
+
+    <ImageView
+        android:id="@+id/ic_loc"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_toRightOf="@id/car_image"
+        android:layout_alignTop="@id/car_location"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/ic_location"
+        />
+    <TextView
+        android:id="@+id/car_location"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_below="@id/car_battery"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="5dp"
+        android:gravity="center_vertical"
+        android:layout_toRightOf="@id/ic_loc"
+        android:text="location"
+        />
+
+</RelativeLayout>
